@@ -26,9 +26,10 @@ div#beach {
 }
 #years-together {
     position: absolute;
-    bottom: 95px;
-    left: 40px;
-    width: 140px;
+    top: 5%;
+    right: 5%;
+    width: 15%;
+    border-radius: 2px;
 
 }
 .heart-shape {
@@ -59,6 +60,7 @@ div#beach {
     top: -50px;
     right: 0;
 }
+
 .giftbox {
     position: absolute;
     width: 300px;
@@ -303,4 +305,15 @@ position: absolute;
 .step-2 .icons .row span:nth-child(13) {
     /*-webkit-transition-delay: 0.15s;*/
     transition-delay: 0.65s;
+}
+.step-2 .icons span, .step-3 .icons span, .step-4 .icons span {
+    opacity: 1;
+    transition-timing-function: cubic-bezier(0, 0, 0.2, 0.91);
+}
+.step-4 .icons .row span, .step-3 .icons .row span {
+    color: #c6e2ff;
+    animation: neon .08s ease-in-out infinite alternate;
+}
+.step-4 .icons .row span:nth-child(even), .step-3 .icons .row span:nth-child(even){
+   // animation-duration:
 }
